@@ -1,4 +1,8 @@
-.idea/
 _site
-vendor/ruby
-.vscode
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Gemfile.lock

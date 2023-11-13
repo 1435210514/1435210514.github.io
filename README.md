@@ -1,29 +1,54 @@
-# Portfolio
+# jekyll-uno
 
-A simple and modern portfolio template that is lightweight, mobile responsive and looks modern. 
+Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
-- [Demo](#demo)
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Installation](#installation)
-
-### Demo
-[abhn.io](https://abhn.io)
-
-### Screenshots
-![homepage](tmp/screenshot.jpg?raw=true "Homepage")
+> :warning:
+  This theme requires ruby and rubygems installed
 
 ### Features
-- Single page portfolio made with vanilla CSS and jQuery
-- Sections: Landing, About, Skills (with neat bar graphs), Projects, Contact
-- Smooth scrolling
-- Fully mobile responsive, made with latest CSS3 grid and flexbox, polyfills included
-- Lightweight and easily customizable
 
-### Installation
-- Clone this repository and in the settings, set up Github pages in the setting and optionally a custom domain. The site is live now on `your-username.github.io/portfolio`.
-- In the config variables, add your details and if you use Google Analytics, add your Publisher ID in the `google_analytics` variable.
-- You can add/remove sections from the `_layouts/default.html` file, and then adding the corresponding html file in `_includes/` directory.
+* Clean layout
+* Resposive layout
+* Pagination
+* Syntax highlighting
+* Social links
+* Tags listing page
+* Categories listing page
+* Google Analytics integration
+* Disqus integration
 
-### License
-GPL
+---
+
+### Install and Test
+
+1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
+2. Enter the folder: `cd jekyll-uno/`
+3. If you don't have bundler installed: `gem install bundler`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `bundle exec jekyll serve --watch`
+
+Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+
+If you would like to run without using the `github-pages` gem, update your Gemfile to the following:
+
+```
+source 'https://rubygems.org'
+gem 'jekyll-paginate'
+gem 'jekyll-watch'
+gem 'kramdown'
+gem 'kramdown-parser-gfm'
+```
+---
+
+### Demo and Download
+
+[Demo](http://joshgerdes.com/jekyll-uno/)
+[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+
+![jekyll-uno - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
